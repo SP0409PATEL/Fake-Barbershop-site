@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fradel & Spies | Contact</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="Images/Fradel & Spies favicon.png" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="navbar">
+            <div class="navbar-left">
+                <a href="index.html"><img src="Images/Fradel & Spies logo.png" alt="Fradel & Spies Logo" class="logo"></a>
+            </div>
+            <div class="navbar-right">
+                <a href="services.html">SERVICES</a>
+                <a href="contact.html">BOOK NOW</a>
+            </div>
+        </header>
+        <main>
+            <div class="hero">
+                <h1>Book Your Appointment</h1>
+                <p>Your perfect cut is just a few clicks away.</p>
+            </div>
+            <div class="form-container">
+                <form name="book-appointment" method="POST" data-netlify="true">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="email">Email (optional)</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="service">Service</label>
+                    <select id="service" name="service" required>
+                        <option value="">Select a service</option>
+                        <option value="Haircut">Haircut</option>
+                        <option value="Beard Trim">Beard Trim</option>
+                        <option value="Shave">Shave</option>
+                        <option value="Hair Coloring">Hair Coloring</option>
+                    </select>
+
+                    <label for="date">Preferred Date</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="time">Preferred Time</label>
+                    <input type="time" id="time" name="time" required>
+
+                    <label for="notes">Additional Notes</label>
+                    <textarea id="notes" name="notes" rows="4"></textarea>
+
+                    <button type="submit">Book Appointment</button>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
